@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #coding=utf-8
-
+sum=0
 
 def isPrime(N):
 	i=1
@@ -15,6 +15,8 @@ def isPrime(N):
 	else:
 		return 0
 		
-print isPrime(2)
 
-
+for r in range(2,1000):
+	if isPrime(r)==1:
+		sum=sum+r
+print sum
